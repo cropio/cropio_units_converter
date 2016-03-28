@@ -12,7 +12,7 @@ BushelPerAcre::~BushelPerAcre() {
 };
 
 float BushelPerAcre::coefficient() {
-  this->bushels_table[standard_name];
+  return this->bushels_table[standard_name];
 };
 
 void BushelPerAcre::define_bushels_table() {
