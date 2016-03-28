@@ -21,9 +21,10 @@ class CropioUnits
 private:
   UnitsTable units_table;
   CropioUnitsTable table;
-  CropioUnits(CropioUnitsTable table);
 
 public:
+  CropioUnits(CropioUnitsTable table);
+
   float length_from_base(float value);
   float length_to_base(float value);
 
