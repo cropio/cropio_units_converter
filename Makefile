@@ -10,5 +10,10 @@ build: clean
 			$(AR) -cvq $(LIB)/$(TARGET).a $(LIB)/$(TARGET).o
 			rm $(LIB)/$(TARGET).o
 
+			cat $(SOURCE)/unit_enumeration.h \
+					$(SOURCE)/units_table.h \
+					$(SOURCE)/cropio_units_table.h \
+					$(SOURCE)/units.h \
+					> $(LIB)/cropio_units.h
 clean:
 			rm -rf $(LIB)
