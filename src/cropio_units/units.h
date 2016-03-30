@@ -48,6 +48,12 @@ namespace cropio_units {
 
     float fuel_consumption_from_base(float value);
     float fuel_consumption_to_base(float value);
+
+    float depth_from_base(float value);
+    float depth_consumption_to_base(float value);
+
+    float row_spacing_from_base(float value);
+    float row_spacing_to_base(float value);
   };
 }
 

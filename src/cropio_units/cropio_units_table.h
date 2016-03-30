@@ -13,6 +13,8 @@ namespace cropio_units {
     precipitation_level_unit precipitation_level;
     water_rate_unit water_rate;
     fuel_consumption_unit fuel_consumption;
+    depth_unit depth;
+    row_spacing_unit row_spacing;
   };
 }
 

@@ -102,5 +102,25 @@ namespace cropio_units {
     MILE_PER_US_GALLON,
     MILE_PER_UK_GALLON
   };
+
+  /*
+   *
+   * Default unit - CM
+  */
+  enum depth_unit {
+    dCM,
+    dIN
+  };
+
+  /*
+   *
+   * Default unit - M
+  */
+  enum row_spacing_unit {
+    rsCM,
+    rsIN,
+    rsFT,
+    rsM
+  };
 }
 

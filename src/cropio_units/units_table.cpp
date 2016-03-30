@@ -156,6 +156,28 @@ namespace cropio_units {
     }
   };
 
+  float UnitsTable::depth(depth_unit unit) {
+    switch(unit) {
+      case dCM:
+        return 1.0;
+      case dIN:
+        return 0.393700787;
+    }
+  };
+
+  float UnitsTable::row_spacing(row_spacing_unit unit){
+    switch(unit) {
+      case rsCM:
+        return 100.0;
+      case rsIN:
+        return 39.3700787;
+      case rsFT:
+        return 3.2808399;
+      case rsM:
+        return 1.0;
+    }
+  };
+
   float UnitsTable::to_celsius(float temp) {
     return temp;
   };

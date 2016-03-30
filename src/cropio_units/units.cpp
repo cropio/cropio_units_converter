@@ -115,5 +115,21 @@ namespace cropio_units {
   float CropioUnits::fuel_consumption_to_base(float value) {
     return units_table.fuel_consumption(table.fuel_consumption)(value);
   }
+
+  float CropioUnits::depth_from_base(float value) {
+    return value * units_table.depth(table.depth);
+  }
+
+  float CropioUnits::depth_consumption_to_base(float value) {
+    return value / units_table.depth(table.depth);
+  }
+
+  float CropioUnits::row_spacing_from_base(float value) {
+    return value * units_table.row_spacing(table.row_spacing);
+  }
+
+  float CropioUnits::row_spacing_to_base(float value) {
+    return value / units_table.row_spacing(table.row_spacing);
+  }
 }
 

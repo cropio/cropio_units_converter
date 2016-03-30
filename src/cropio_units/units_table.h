@@ -17,6 +17,8 @@ namespace cropio_units {
     float precipitation_level(precipitation_level_unit unit);
     float water_rate(water_rate_unit unit);
     ConversionFunction fuel_consumption(fuel_consumption_unit unit);
+    float depth(depth_unit unit);
+    float row_spacing(row_spacing_unit unit);
 
   private:
     static float to_celsius(float temp);
