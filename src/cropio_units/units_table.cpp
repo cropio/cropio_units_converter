@@ -115,9 +115,9 @@ namespace cropio_units {
                                               bool to_base) {
     switch(unit) {
       case CELSIUS:
-        return (to_base ? to_celsius : from_celsius);
+        return celsius;
       case FAHRENHEIT:
-        return (to_base ? to_fahrenheit : from_fahrenheit);
+        return (to_base ? from_fahrenheit : to_fahrenheit);
     }
   };
 
@@ -178,11 +178,7 @@ namespace cropio_units {
     }
   };
 
-  float UnitsTable::to_celsius(float temp) {
-    return temp;
-  };
-
-  float UnitsTable::from_celsius(float temp) {
+  float UnitsTable::celsius(float temp) {
     return temp;
   };
 
@@ -191,7 +187,7 @@ namespace cropio_units {
   };
 
   float UnitsTable::from_fahrenheit(float temp) {
-    return (temp - 32.0) / (5 / 9);
+    return (temp - 32.0) / (5.0 / 9.0);
   };
 
   float UnitsTable::lp100km(float consumption) {

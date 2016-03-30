@@ -104,7 +104,7 @@ namespace cropio_units {
   };
 
   /*
-   *
+   * Depth of sowing
    * Default unit - CM
   */
   enum depth_unit {
@@ -113,7 +113,7 @@ namespace cropio_units {
   };
 
   /*
-   *
+   * Spaces between rows for seeding
    * Default unit - M
   */
   enum row_spacing_unit {

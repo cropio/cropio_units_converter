@@ -31,8 +31,8 @@ namespace cropio_units {
 
     float productivity_from_base(float value,
                                  char* standard_crop_name);
-    float productivity_weight_to_base(float value,
-                                      char* standard_crop_name);
+    float productivity_to_base(float value,
+                               char* standard_crop_name);
 
     float speed_from_base(float value);
     float speed_to_base(float value);
@@ -50,7 +50,7 @@ namespace cropio_units {
     float fuel_consumption_to_base(float value);
 
     float depth_from_base(float value);
-    float depth_consumption_to_base(float value);
+    float depth_to_base(float value);
 
     float row_spacing_from_base(float value);
     float row_spacing_to_base(float value);

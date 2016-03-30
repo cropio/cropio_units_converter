@@ -70,8 +70,8 @@ namespace cropio_units {
                                             standard_crop_name);
   }
 
-  float CropioUnits::productivity_weight_to_base(float value,
-                                                 char* standard_crop_name) {
+  float CropioUnits::productivity_to_base(float value,
+                                          char* standard_crop_name) {
     return value / units_table.productivity(table.productivity,
                                             standard_crop_name);
   }
@@ -120,7 +120,7 @@ namespace cropio_units {
     return value * units_table.depth(table.depth);
   }
 
-  float CropioUnits::depth_consumption_to_base(float value) {
+  float CropioUnits::depth_to_base(float value) {
     return value / units_table.depth(table.depth);
   }
 

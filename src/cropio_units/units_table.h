@@ -21,8 +21,7 @@ namespace cropio_units {
     float row_spacing(row_spacing_unit unit);
 
   private:
-    static float to_celsius(float temp);
-    static float from_celsius(float temp);
+    static float celsius(float temp);
     static float to_fahrenheit(float temp);
     static float from_fahrenheit(float temp);
 
